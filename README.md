@@ -34,4 +34,6 @@ The plugin is made for `1.20.1+`
 
 ## Commands
 
-`/reloadstatuspage` - Reload the config
+`/reloadstatuspage` | `statuspage.reload` - Reload the config
+
+
