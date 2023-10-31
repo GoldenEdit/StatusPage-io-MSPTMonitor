@@ -34,9 +34,13 @@ public final class StatusPageMSPTMonitor extends JavaPlugin {
 
         // Register commands
         getCommand("reloadstatuspage").setExecutor((sender, command, label, args) -> {
-            loadConfig();
-            scheduleTask();
-            sender.sendMessage("Config reloaded and task rescheduled.");
+            if (sender.hasPermission("statuspage.reload")) {
+                loadConfig();
+                scheduleTask();
+                sender.sendMessage("Config reloaded and task rescheduled.");
+            } else {
+                sender.sendMessage("You do not have permission to reload the configuration.");
+            }
             return true;
         });
     }
