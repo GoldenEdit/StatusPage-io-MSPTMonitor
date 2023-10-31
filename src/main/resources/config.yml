@@ -1,0 +1,6 @@
+apiKey: "your-api-key-goes-here"
+pageId: "your-page-id-goes-here"
+metricId: "your-metric-id-goes-here"
+apiBase: "https://api.statuspage.io/v1"
+frequency: 300 # default 5 minutes (in seconds)
+debug: false
